@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlockOptionsEditor</string>
+
+    <!-- These strings are just lifted from BlockLauncher. -->
+    <string name="pref_ctrl_touchscreen">Use Touchscreen</string>
+    <string name="pref_ctrl_touchscreen_summary">If you are not using an Xperia Play, check this</string>
+    <string name="pref_mp_username">Multiplayer Username</string>
+    <string name="pref_mp_username_summary">Your name, duh</string>
+    <string name="pref_texture_pack">Texture Pack</string>
+    <string name="pref_texture_pack_summary">Change your texture pack</string>
+    <string name="pref_ctrl_usetouchjoypad">Split touch</string>
+    <string name="pref_ctrl_islefthanded">Lefty</string>
+    <string name="pref_ctrl_islefthanded_summary">Mirrors the control scheme</string>
+    <string name="pref_ctrl_invertmouse">Invert Y-axis</string>
+    <string name="pref_ctrl_invertmouse_summary">Meanwhile in Australia :)</string>
+    <string name="pref_feedback_vibration">Vibrate</string>
+    <string name="pref_feedback_vibration_summary">Vibrate when a block is destroyed</string>
+    <string name="pref_zz_longvibration">Extra-long vibration</string>
+    <string name="pref_zz_longvibration_summary">Increase the vibration length by 5x</string>
+    <string name="pref_gfx_fancygraphics">Fancy graphics</string>
+    <string name="pref_gfx_fancygraphics_summary">Make stuff look better</string>
+    <string name="pref_gfx_lowquality">Low quality graphics</string>
+    <string name="pref_gfx_lowquality_summary">Make stuff look worse</string>
+    <string name="pref_game_difficultypeaceful">Peaceful mode</string>
+    <string name="pref_game_difficultypeaceful_summary">Health regeneration, no monsters</string>
+    <string name="pref_ctrl_sensitivity">Sensitivity</string>
+    <string name="pref_ctrl_sensitivity_summary">Touch sensitivity</string>
+    <string name="pref_zz_safe_mode">Safe mode</string>
+    <string name="pref_zz_safe_mode_summary">Disables all patches</string>
+    <string name="pref_zz_patch_ip_enable">Redirect Multiplayer</string>
+    <string name="pref_zz_patch_ip_enable_summary">Redirects multiplayer connections to an online server</string>
+    <string name="pref_zz_patch_ip">Server IP</string>
+    <string name="pref_zz_patch_ip_summary">The IP address of the online server</string>
+    <string name="pref_zz_patch_ip_port">Server Port</string>
+    <string name="pref_zz_patch_ip_port_summary">The port of the online server (usually 19132)</string>
+    <string name="pref_zz_texture_pack_enable">Use texture pack</string>
+    <string name="pref_zz_texture_pack_demo">Demonstrate texture pack support</string>
+    <string name="pref_zz_texture_pack_demo_summary">Use the built-in version of the Slickcraft texture pack by NathanX</string>
+    <string name="pref_mp_server_visible_default">Server visible by default</string>
+    <string name="pref_mp_title">Multiplayer</string>
+    <string name="pref_ctrl_title">Controls</string>
+    <string name="pref_gfx_title">Graphics</string>
+    <string name="pref_addons_title">Addons and patches</string>
+    <string name="pref_textures_title">Textures</string>
+    <string name="pref_support_title">Support</string>
+    <string name="pref_zz_load_native_addons">Enable experimental addon support</string>
+    <string name="pref_zz_enable_hovercar">Enable in-game patch manager</string>
+    <string name="texture_pack_unable_to_load">Unable to load texture pack.</string>
+    <string name="pref_zz_extract_original_textures">Extract original textures with root access</string>
+    <string name="pref_zz_extract_original_textures_summary">Backup original APK with root access and set it as the texture pack</string>
+    <string name="extracting_textures">Backing up original APK</string>
+    <string name="extract_textures_success">Successfully set original APK as texture pack.</string>
+    <string name="extract_textures_error">Unable to access original APK.</string>
+    <string name="extract_textures_no_root">Unable to gain superuser access - are you rooted?</string>
+    <string name="extract_textures_need_update">It seems you are using textures from an older version of Minecraft PE. Please run \"Extract original textures with root access\" in the options screen again to update textures.</string>
+    <string name="pref_zz_skin_enable">Enable skin override</string>
+    <string name="pref_zz_skin">Change skin</string>
+    <string name="pref_zz_skin_summary">Select .png file to change skin to (will only be visible to you)</string>
+    <string name="pref_zz_hovercar_hide">Hide patch manager button</string>
+    <string name="pref_zz_redirect_mco">Redirect Realms to third-party server list</string>
+    <string name="pref_zz_manage_scripts">Manage ModPE Scripts</string>
+    <string name="pref_zz_script_enable">Enable ModPE Scripts support</string>
+
+    <!-- end copied strings. -->
+    <string name="pref_game_thirdperson">Third person view</string>
+    <string name="pref_game_difficulty">Difficulty</string>
+    <string name="pref_gfx_animatetextures">Animated water</string>
+    <string name="pref_gfx_ao">Smooth Lighting</string>
+    <string name="pref_gfx_fancyskies">Fancy skies</string>
+    <string name="pref_gfx_hidegui">Hide GUI</string>
+    <string name="pref_gfx_pixeldensity">Controls size</string>
+    <string name="pref_gfx_renderdistance">Render distance</string>
+
+    <string name="game_difficulty_peaceful">Peaceful</string>
+    <string name="game_difficulty_easy">Easy</string>
+    <string name="game_difficulty_normal">Normal</string>
+    <string name="game_difficulty_hard">Hard</string>
+
+    <string name="gfx_renderdistance_far">Far</string>
+    <string name="gfx_renderdistance_normal">Normal</string>
+    <string name="gfx_renderdistance_short">Short</string>
+    <string name="gfx_renderdistance_tiny">Tiny</string>
+
+
+</resources>

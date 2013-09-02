@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="@string/pref_mp_title">
+
+    <EditTextPreference
+        android:key="mp_username"
+        android:title="@string/pref_mp_username"
+        android:summary="@string/pref_mp_username_summary"
+        android:defaultValue="Steve" />
+    <CheckBoxPreference
+        android:key="mp_server_visible"
+        android:title="@string/pref_mp_server_visible_default"
+        android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/pref_ctrl_title">
+
+    <!--<com.lukehorvat.SeekBarDialogPreference android:key="ctrl_sensitivity"
+        android:defaultValue="50"
+        android:max="100"
+        android:title="@string/pref_ctrl_sensitivity"
+        custom:progressTextSuffix="%"
+        custom:min="1" />-->
+
+    <CheckBoxPreference
+        android:key="ctrl_invertmouse"
+        android:title="@string/pref_ctrl_invertmouse"
+        android:summary="@string/pref_ctrl_invertmouse_summary"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="ctrl_islefthanded"
+        android:title="@string/pref_ctrl_islefthanded"
+        android:summary="@string/pref_ctrl_islefthanded_summary"
+        android:defaultValue="false"/>
+
+    <EditTextPreference
+        android:key="ctrl_sensitivity"
+        android:title="@string/pref_ctrl_sensitivity"
+        android:inputType="numberDecimal"
+        android:defaultValue="0.5"/>
+
+    <CheckBoxPreference
+        android:key="ctrl_usetouchscreen"
+        android:title="@string/pref_ctrl_touchscreen"
+        android:summary="@string/pref_ctrl_touchscreen_summary"
+        android:defaultValue="true" />
+    <CheckBoxPreference
+        android:key="ctrl_usetouchjoypad"
+        android:title="@string/pref_ctrl_usetouchjoypad"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="feedback_vibration"
+        android:title="@string/pref_feedback_vibration"
+        android:summary="@string/pref_feedback_vibration_summary"
+        android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Odds and ends">
+
+    <CheckBoxPreference
+        android:key="game_thirdperson"
+        android:title="@string/pref_game_thirdperson"
+        android:defaultValue="false"/>
+
+    <ListPreference
+        android:key="game_difficulty"
+        android:title="@string/pref_game_difficulty"
+        android:defaultValue="2"
+        android:entries="@array/pref_game_difficulty_names"
+        android:entryValues="@array/pref_game_difficulty_values"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/pref_gfx_title">
+
+    <CheckBoxPreference
+        android:key="gfx_animatetextures"
+        android:title="@string/pref_gfx_animatetextures"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="gfx_ao"
+        android:title="@string/pref_gfx_ao"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="gfx_fancygraphics"
+        android:title="@string/pref_gfx_fancygraphics"
+        android:summary="@string/pref_gfx_fancygraphics_summary"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="gfx_fancyskies"
+        android:title="@string/pref_gfx_fancyskies"
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="gfx_hidegui"
+        android:title="@string/pref_gfx_hidegui"
+        android:defaultValue="false"/>
+
+    <EditTextPreference
+        android:key="gfx_pixeldensity"
+        android:title="@string/pref_gfx_pixeldensity"
+        android:inputType="numberDecimal"
+        android:defaultValue="7.0"/>
+
+    <ListPreference
+        android:key="gfx_renderdistance"
+        android:title="@string/pref_gfx_renderdistance"
+        android:defaultValue="2"
+        android:entries="@array/pref_gfx_renderdistance_names"
+        android:entryValues="@array/pref_gfx_renderdistance_values"/>
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
