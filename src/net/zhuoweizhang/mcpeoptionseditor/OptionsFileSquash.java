@@ -23,7 +23,33 @@ public class OptionsFileSquash {
 
 	public static Map<String, String> squish(PreferenceGroup prefs) {
 		Map<String, String> map = new HashMap<String, String>();
+		squishPref(prefs, map);
 		return map;
+	}
+
+	private static void squishPref(Preference pref, Map<String, String> map) {
+		if (pref instanceof PreferenceGroup) {
+			PreferenceGroup prefs = (PreferenceGroup) pref;
+			int count = prefs.getPreferenceCount();
+			for (int i = 0; i < count; ++i) {
+				Preference prefer = prefs.getPreference(i);
+				squishPref(prefer, map);
+
+			}
+			return;
+		}
+		System.out.println(pref);
+		String key = pref.getKey();
+		String output = "";
+		if (pref instanceof CheckBoxPreference) {
+			output = ((CheckBoxPreference) pref).isChecked() ? "1" : "0";
+		} else if (pref instanceof EditTextPreference) {
+			output = ((EditTextPreference) pref).getText();
+		} else if (pref instanceof ListPreference) {
+			output = ((ListPreference) pref).getValue();
+		}
+		System.out.println(key + ":" + output);
+		map.put(key, output);
 	}
 
 }

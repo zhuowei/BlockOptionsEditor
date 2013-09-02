@@ -77,6 +77,11 @@
         android:entries="@array/pref_game_difficulty_names"
         android:entryValues="@array/pref_game_difficulty_values"/>
 
+    <CheckBoxPreference
+        android:key="audio_sound"
+        android:title="@string/pref_audio_sound"
+        android:defaultValue="true"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory 

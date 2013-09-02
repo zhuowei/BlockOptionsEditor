@@ -26,4 +26,14 @@ public class MainActivity extends PreferenceActivity /*implements Preference.OnP
 			e.printStackTrace();
 		}
 	}
+
+	public void onPause() {
+		super.onPause();
+		try {
+			Map<String, String> prefsMap = OptionsFileSquash.squish(getPreferenceScreen());
+			OptionsFileIO.writeOptionsFile(prefsMap);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
